@@ -1,9 +1,11 @@
+import { MOCK_PROJECTS } from "./MockProjects";
 
 const ProjectsPage = () => {
     return (
-        <div>
+        <>
             <h1>Projects</h1>
-        </div>
+            <pre>{JSON.stringify(MOCK_PROJECTS, null, ' ')}</pre>
+        </>
     )
 }
 
