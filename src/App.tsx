@@ -1,13 +1,12 @@
 import React from "react";
 import "../node_modules/mini.css/dist/mini-dark.min.css";
 import "./App.css";
+import ProjectsPage from "./projects/ProjectsPage";
 
 function App() {
   return (
-    <div className="App">
-      <blockquote cite="Jessamyn McTwigan">
-        Let's start keeping track of our projects!{" "}
-      </blockquote>
+    <div className="container">
+      <ProjectsPage />
     </div>
   );
 }
