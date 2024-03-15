@@ -1,23 +1,17 @@
 import { Project } from './Project';
+import ProjectCard from './ProjectCard';
 
 interface ProjectListProps {
     projects: Project[];
 }
 
 const ProjectList = ({ projects }: ProjectListProps) => {
-
+    // const { projects } = props
     return (
         <div className='row'>
             {projects.map((project) => (
                 <div key={project.id} className='card'>
-                    <img src={project.imageUrl} alt={project.name}></img>
-                    <section className="section dark">
-                        <h5 className="strong">
-                            <strong>{project.name}</strong>
-                        </h5>
-                        <p>{project.description}</p>
-                        <p>Budget : {project.budget.toLocaleString()}</p>
-                    </section>
+                    <ProjectCard project={project} />
                 </div>
             ))}
         </div>
