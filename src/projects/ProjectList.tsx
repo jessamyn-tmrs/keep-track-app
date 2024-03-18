@@ -5,8 +5,8 @@ interface ProjectListProps {
     projects: Project[];
 }
 
-const ProjectList = ({ projects }: ProjectListProps) => {
-    // const { projects } = props
+const ProjectList = (props: ProjectListProps) => {
+    const { projects } = props
     return (
         <div className='row'>
             {projects.map((project) => (
