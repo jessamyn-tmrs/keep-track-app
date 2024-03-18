@@ -1,5 +1,6 @@
 import { Project } from './Project';
 import ProjectCard from './ProjectCard';
+import ProjectForm from './ProjectForm';
 
 interface ProjectListProps {
     projects: Project[];
@@ -12,6 +13,7 @@ const ProjectList = (props: ProjectListProps) => {
             {projects.map((project) => (
                 <div key={project.id} className='card'>
                     <ProjectCard project={project} />
+                    <ProjectForm />
                 </div>
             ))}
         </div>
