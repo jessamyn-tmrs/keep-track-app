@@ -1,7 +1,10 @@
 
-type Props = {}
+interface ProjectFormProps {
+    onCancel: () => void;
+}
 
-const ProjectForm = (props: Props) => {
+const ProjectForm = ({ onCancel }: ProjectFormProps) => {
+    // const { onCancel } = props;
     return (
         <div>
             <form className="input-group vertical">
@@ -19,7 +22,7 @@ const ProjectForm = (props: Props) => {
                 <div className="input-group">
                     <button className="primary bordered medium">Save</button>
                     <span></span>
-                    <button type="button" className="bordered medium">cancel</button>
+                    <button type="button" className="bordered medium" onClick={onCancel}>Cancel</button>
                 </div>
             </form>
         </div>
