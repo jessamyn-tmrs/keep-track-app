@@ -7,8 +7,7 @@ interface ProjectListProps {
     projects: Project[];
 }
 
-const ProjectList = (props: ProjectListProps) => {
-    const { projects } = props;
+const ProjectList = ({ projects }: ProjectListProps) => {
     const [projectBeingEdited, setProjectBeingEdited] = useState({});
     const handleEdit = (project: Project) => {
         setProjectBeingEdited(project);

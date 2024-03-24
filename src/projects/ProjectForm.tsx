@@ -4,7 +4,6 @@ interface ProjectFormProps {
 }
 
 const ProjectForm = ({ onCancel }: ProjectFormProps) => {
-    // const { onCancel } = props;
     return (
         <div>
             <form className="input-group vertical">
