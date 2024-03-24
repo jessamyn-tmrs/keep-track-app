@@ -7,13 +7,19 @@ interface ProjectListProps {
 }
 
 const ProjectList = (props: ProjectListProps) => {
-    const { projects } = props
+    const { projects } = props;
+    const handleEdit = (project: Project) => {
+        console.log(project)
+    };
     return (
         <div className='row'>
             {projects.map((project) => (
                 <div key={project.id} className='card'>
-                    <ProjectCard project={project} />
-                    <ProjectForm />
+                    <ProjectCard
+                        project={project}
+                        onEdit={handleEdit}
+                    ></ProjectCard>
+                    <ProjectForm></ProjectForm>
                 </div>
             ))}
         </div>
