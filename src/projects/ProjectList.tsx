@@ -22,6 +22,7 @@ const ProjectList = ({ projects, onSave }: ProjectListProps) => {
                 <div key={project.id} className='card'>
                     {project === projectBeingEdited ? (
                         <ProjectForm
+                            project={project}
                             onSave={onSave}
                             onCancel={cancelEditing} />
                     ) : (
