@@ -1,4 +1,3 @@
-import { error } from "console";
 import { Project } from "./Project";
 const baseUrl = "http://localhost:4000";
 const url = `${baseUrl}/projects`;
