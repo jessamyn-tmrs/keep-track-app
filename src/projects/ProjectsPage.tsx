@@ -8,10 +8,19 @@ const ProjectsPage = () => {
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState<string | undefined>(undefined);
     const saveProject = (project: Project) => {
-        let updatedProject = projects.map((p: Project) => {
-            return p.id === project.id ? project : p;
-        });
-        setProjects(updatedProject);
+        projectAPI
+            .put(project)
+            .then((updatedProject) => {
+                let updatedProjects = projects.map((p: Project) => {
+                    return p.id === project.id ? new Project(updatedProject) : p;
+                });
+                setProjects(updatedProjects);
+            })
+            .catch((error) => {
+                if (error instanceof Error) {
+                    setError(error.message);
+                }
+            })
     };
 
     useEffect(() => {
