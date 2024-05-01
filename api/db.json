@@ -312,7 +312,7 @@
     },
     {
       "id": 32,
-      "name": "Daniel, Howell and Nader",
+      "name": "Dal, Howell and Nader",
       "description": "Horizontal zero administration time-frame. Hic rerum est quo id aut adipisci odio ipsa ab.",
       "imageUrl": "/assets/placeimg_500_300_arch5.jpg",
       "contractTypeId": 3,
@@ -452,7 +452,7 @@
     },
     {
       "id": 46,
-      "name": "Bernier and Sons",
+      "name": "a test",
       "description": "User-friendly directional standardization. Temporibus qui laudantium ipsam sapiente ut eum ab omnis quasi.",
       "imageUrl": "/assets/placeimg_500_300_arch6.jpg",
       "contractTypeId": 1,
@@ -662,7 +662,7 @@
     },
     {
       "id": 67,
-      "name": "Bednar - Yundt",
+      "name": "a test",
       "description": "Reactive secondary protocol. Cumque fugiat reprehenderit commodi et ea voluptas aliquid facere placeat.",
       "imageUrl": "/assets/placeimg_500_300_arch6.jpg",
       "contractTypeId": 4,
@@ -732,13 +732,13 @@
     },
     {
       "id": 74,
-      "name": "Armstrong, Crona and Ziemann",
+      "name": "a test",
       "description": "Switchable bifurcated task-force. Hic sed at et id et et qui quis dolores.",
       "imageUrl": "/assets/placeimg_500_300_arch6.jpg",
       "contractTypeId": 2,
       "contractSignedOn": "2012-05-15T12:41:51.113Z",
-      "budget": 91566,
-      "isActive": true
+      "budget": 27,
+      "isActive": false
     },
     {
       "id": 75,
@@ -942,7 +942,7 @@
     },
     {
       "id": 95,
-      "name": "Armstrong - Hands",
+      "name": "aaaa plop- Hands",
       "description": "Persistent 3rd generation capability. Sint omnis asperiores voluptas sapiente delectus blanditiis earum ut voluptatem.",
       "imageUrl": "/assets/placeimg_500_300_arch6.jpg",
       "contractTypeId": 2,
