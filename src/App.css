@@ -2,3 +2,11 @@ body {
   background-color: black;
   color: white;
 }
+
+header {
+  height: 5.1875rem;
+}
+
+a.button.active {
+  border: 1px solid var(--fore-color);
+}
